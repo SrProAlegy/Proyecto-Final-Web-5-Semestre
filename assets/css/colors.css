@@ -1,0 +1,81 @@
+:root {
+	/*Colores personalizados*/
+	--delft-blue: #263878;
+	--pigment-green: #5aa956;
+	--dark-cyan: #2f8586;
+	--yinmn-blue: #27507c;
+	--blue-ncs: #277fb1;
+	--antiflash-white: #f2f5f6;
+  --carbon: #414141;
+}
+
+
+/* Fondos personalizados */
+
+.bg-delft-blue {
+  background-color: var(--delft-blue) !important;
+  color: #fff !important;
+}
+
+.bg-pigment-green {
+  background-color: var(--pigment-green) !important;
+  color: #fff !important;
+}
+
+.bg-dark-cyan {
+  background-color: var(--dark-cyan) !important;
+  color: #fff !important;
+}
+
+.bg-yinmn-blue {
+  background-color: var(--yinmn-blue) !important;
+  color: #fff !important;
+}
+
+.bg-blue-ncs {
+  background-color: var(--blue-ncs) !important;
+  color: #fff !important;
+}
+
+.bg-antiflash-white {
+  background-color: var(--antiflash-white) !important;
+  color: #000 !important;
+}
+
+/* 🟢 Texto personalizado */
+
+.text-delft-blue { color: var(--delft-blue) !important; }
+.text-pigment-green { color: var(--pigment-green) !important; }
+.text-dark-cyan { color: var(--dark-cyan) !important; }
+.text-yinmn-blue { color: var(--yinmn-blue) !important; }
+.text-blue-ncs { color: var(--blue-ncs) !important; }
+.text-antiflash-white { color: var(--antiflash-white) !important; }
+
+/* Botones personalizados */
+
+.btn-delft-blue {
+  background-color: var(--delft-blue);
+  color: #fff;
+  border: none;
+}
+.btn-delft-blue:hover {
+  background-color: #1e2e62;
+}
+
+.btn-pigment-green {
+  background-color: var(--pigment-green);
+  color: #fff;
+  border: none;
+}
+.btn-pigment-green:hover {
+  background-color: #4b8c47;
+}
+
+.btn-dark-cyan {
+  background-color: var(--dark-cyan);
+  color: #fff;
+  border: none;
+}
+.btn-dark-cyan:hover {
+  background-color: #256f70;
+}
