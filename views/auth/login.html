@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Logout</title>
+	<title>Login</title>
 	<!--  icon -->
 	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
 	<!-- Font Awesome -->
@@ -13,9 +13,9 @@
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/colors.css">
+	<link rel="stylesheet" href="../../assets/css/fonts.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 
@@ -23,24 +23,53 @@
 <body>
 
 	<header>
-		<!-- banner -->
-		<div class="container-fluid">
-			<div class="row p-2">
-				<div class="col-12 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
-				</div>				
-			</div>
-		</div>
 	</header>
 
 	<main>
-		<!-- inicio contenido-->
-		<div class="containder-fluid d-flex flex-column align-items-center justify-content-center ">
-			<h3 class="text-success">INICIO DE SESION</h3>
+		<!-- Inicio contenido -->
+		<div class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-antiflash-white">
+			<div class="row w-100 d-flex justify-content-evenly align-items-center px-3">
+
+				<!-- Columna izquierda (Logo y nombre del sistema) -->
+				<div class="col-md-4 bg-white p-4 text-center shadow rounded border border-3">
+					<img src="../../assets/img/logo.svg" alt="logo" class="mb-3 img-fluid" style="max-height: 200px;">
+					<h1 class="fs-3 font-nexa text-delft-blue fw-bold">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+				</div>
+
+				<!-- Columna derecha (Formulario de login) -->
+				<div class="col-md-6 bg-white shadow p-4 rounded border border-3">
+					<form action="" method="post">
+						<h1 class="fs-3 text-center mb-4 font-nexa text-delft-blue">INICIO DE SESIÓN</h1>
+
+						<!-- Usuario -->
+						<div class="mb-3">
+							<label for="usuario" class="form-label fw-bold font-roboto text-delft-blue">Usuario</label>
+							<input type="text" name="usuario" id="usuario" class="form-control"
+								placeholder="Ingresa tu usuario" required>
+						</div>
+
+						<!-- Contraseña -->
+						<div class="mb-4">
+							<label for="password"
+								class="form-label fw-bold font-roboto text-delft-blue">Contraseña</label>
+							<input type="password" name="password" id="password" class="form-control"
+								placeholder="Ingresa tu contraseña" required>
+						</div>
+
+						<!-- Botón -->
+						<div class="d-grid">
+							<button type="submit" class="btn btn-delft-blue text-white fw-bold py-2">
+								<i class="fa-solid fa-right-to-bracket me-2"></i> Iniciar Sesión
+							</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
 		</div>
-		<!--fin contenido-->
+		<!-- Fin contenido -->
 	</main>
+
 
 	<footer>
 
