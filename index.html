@@ -23,9 +23,23 @@
 </header>
 
 <body>
-	<!-- inicio contenido-->
-
-	<!--fin contenido-->
+	<div class="card p-4">
+		<h2 class="text-center mb-3">Sistema de Gestión Hospitalaria</h2>
+		<p class="text-center text-muted">Seleccione un módulo para ingresar</p>
+		<div class="d-grid gap-2 mt-3">
+			<a href="views/auth/login.html" target="_blank" class="btn btn-primary btn-module">Auth (Login)</a>
+			<a href="views/auth/logout.html" target="_blank" class="btn btn-secondary btn-module">Auth (Logout)</a>
+			<a href="views/admin/dashboard.html" target="_blank" class="btn btn-success btn-module">Admin (Dashboard, Usuarios,
+				Reportes)</a>
+			<a href="views/admision/registro_paciente.html" target="_blank" class="btn btn-info btn-module text-white">Admisión (Pacientes,
+				Facturación)</a>
+			<a href="views/cocina/menu.html" target="_blank" class="btn btn-warning btn-module text-dark">Cocina (Menús,
+				Preparación)</a>
+			<a href="views/farmacia/recetas.html" target="_blank" class="btn btn-danger btn-module">Farmacia (Almacén, Recetas)</a>
+			<a href="views/unidad_funcional/asignacion_camas.html" target="_blank" class="btn btn-secondary btn-module">Unidad Funcional (Camas,
+				Historial Clínico)</a>
+		</div>
+	</div>
 
 	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
