@@ -3,6 +3,7 @@
 	--delft-blue: #263878;
 	--pigment-green: #5aa956;
 	--dark-cyan: #2f8586;
+  --green-blue: #296378;
 	--yinmn-blue: #27507c;
 	--blue-ncs: #277fb1;
 	--antiflash-white: #f2f5f6;
@@ -48,7 +49,12 @@
   color: #fff !important;
 }
 
-/* 🟢 Texto personalizado */
+.bg-green-blue {
+  background-color: var(--green-blue) !important;
+  color: #fff !important;
+}
+
+/* Texto personalizado */
 
 .text-delft-blue { color: var(--delft-blue) !important; }
 .text-pigment-green { color: var(--pigment-green) !important; }
@@ -57,6 +63,7 @@
 .text-blue-ncs { color: var(--blue-ncs) !important; }
 .text-antiflash-white { color: var(--antiflash-white) !important; }
 .text-orange { color: var(--orange) !important; }
+.text-green-blue { color: var(--green-blue) !important; }
 
 /* Botones personalizados */
 
@@ -94,4 +101,13 @@
 }
 .btn-orange:hover {
   background-color: #b94b0f;
+}
+
+.btn-green-blue {
+  background-color: var(--green-blue);
+  color: #fff;
+  border: none;
+}
+.btn-green-blue:hover {
+  background-color: #1f4c5c;
 }
