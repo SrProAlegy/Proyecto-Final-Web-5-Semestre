@@ -24,7 +24,8 @@
 					<h2 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h2>
 				</div>
 				<div class="col-3 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50" class="bg-light rounded-circle">
+					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50"
+						class="bg-light rounded-circle">
 					<h4 class="d-inline fs-5">USUARIO</h4>
 					<a href="../auth/logout.html" class="btn btn-outline-dark btn-sm" title="Cerrar sesión">
 						<i class="fa-solid fa-right-from-bracket fa-lg"></i>
@@ -69,17 +70,19 @@
 						</button>
 					</div>
 
-					<div class="col-md-4 text-center">
-						<h5 class="mb-0">Signos vitales</h5>
-					</div>
-					<div class="col-md-4 text-center">
-						<h5 class="mb-0">Indicaciones médicas</h5>
+					<div class="col-md-8 d-flex justify-content-end">
+						<button type="button" class="btn btn-success me-md-2">
+							<i class="fa-solid fa-file-circle-plus me-2"></i>Agregar
+						</button>
+						<button type="button" class="btn btn-danger">
+							<i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar
+						</button>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-md-4">
-						<fieldset class="field-group shadow p-4 rounded border border-3">
+						<fieldset class="field-group h-100 shadow p-4 rounded border border-3">
 							<h5>Notas de evolución</h5>
 							<div class="mb-3">
 								<label for="fechaHora" class="form-label">Fecha/Hora</label>
@@ -105,36 +108,34 @@
 					</div>
 
 					<div class="col-md-4">
-						<fieldset class="field-group shadow p-4 rounded border border-3">
-							<div class="row">
-								<div class="col-6 mb-3">
-									<label for="presionArterial" class="form-label">Presión arterial</label>
-									<input type="text" class="form-control form-control-sm" id="presionArterial"
-										placeholder="Ingresar presión arterial">
-								</div>
-								<div class="col-6 mb-3">
-									<label for="frecuenciaCardiaca" class="form-label">Frecuencia cardíaca</label>
-									<input type="text" class="form-control form-control-sm" id="frecuenciaCardiaca"
-										placeholder="Ingrese frecuencia cardíaca">
-								</div>
+						<fieldset class="field-group h-100 shadow p-4 rounded border border-3">
+							<h5 class="mb-0">Signos vitales</h5>
+							<div class="mb-3">
+								<label for="presionArterial" class="form-label">Presión arterial</label>
+								<input type="text" class="form-control form-control-sm" id="presionArterial"
+									placeholder="Ingresar presión arterial">
 							</div>
-							<div class="row">
-								<div class="col-6 mb-3">
-									<label for="temperatura" class="form-label">Temperatura</label>
-									<input type="text" class="form-control form-control-sm" id="temperatura"
-										placeholder="Ingrese temperatura">
-								</div>
-								<div class="col-6 mb-3">
-									<label for="saturacionOxigeno" class="form-label">Saturación de oxígeno</label>
-									<input type="text" class="form-control form-control-sm" id="saturacionOxigeno"
-										placeholder="Ingrese saturación de oxígeno">
-								</div>
+							<div class="mb-3">
+								<label for="frecuenciaCardiaca" class="form-label">Frecuencia cardíaca</label>
+								<input type="text" class="form-control form-control-sm" id="frecuenciaCardiaca"
+									placeholder="Ingrese frecuencia cardíaca">
+							</div>
+							<div class="mb-3">
+								<label for="temperatura" class="form-label">Temperatura</label>
+								<input type="text" class="form-control form-control-sm" id="temperatura"
+									placeholder="Ingrese temperatura">
+							</div>
+							<div class="mb-3">
+								<label for="saturacionOxigeno" class="form-label">Saturación de oxígeno</label>
+								<input type="text" class="form-control form-control-sm" id="saturacionOxigeno"
+									placeholder="Ingrese saturación de oxígeno">
 							</div>
 						</fieldset>
 					</div>
 
 					<div class="col-md-4">
-						<fieldset class="field-group shadow p-4 rounded border border-3">
+						<fieldset class="field-group h-100 shadow p-4 rounded border border-3">
+							<h5 class="mb-0">Indicaciones médicas</h5>
 							<div class="mb-3">
 								<label for="estadoSalud" class="form-label">Estado de salud</label>
 								<input type="text" class="form-control" id="estadoSalud"
@@ -146,20 +147,6 @@
 									placeholder="Ingresar la descripción"></textarea>
 							</div>
 						</fieldset>
-					</div>
-				</div>
-
-				<br>
-
-				<div class="row action-buttons">
-					<div class="col-md-4"></div>
-					<div class="col-md-8 d-grid gap-2 d-md-flex justify-content-md-center">
-						<button type="button" class="btn btn-success me-md-2">
-							<i class="fa-solid fa-file-circle-plus me-2"></i>Agregar
-						</button>
-						<button type="button" class="btn btn-danger">
-							<i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar
-						</button>
 					</div>
 				</div>
 			</form>

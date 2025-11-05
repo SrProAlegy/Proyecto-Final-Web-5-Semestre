@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Admisión - Asignación de Unidad</title>
-    
+
     <link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    
+
     <link rel="stylesheet" href="../../assets/css/colors.css">
     <link rel="stylesheet" href="../../assets/css/fonts.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
@@ -20,23 +20,24 @@
 
 <body>
 
-  <header>
+    <header>
 
         <div class="container-fluid bg-light">
-			<div class="row p-2">
-				<div class="col-8 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60" class="bg-dark rounded-circle p-1">
-					<h2 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h2>
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50" class="bg-light rounded-circle">
-					<h4 class="d-inline fs-5">USUARIO</h4>
-					<a href="../auth/logout.html" class="btn btn-outline-dark btn-sm" title="Cerrar sesión">
-						<i class="fa-solid fa-right-from-bracket fa-lg"></i>
-					</a>
-				</div>
-			</div>
-		</div>
+            <div class="row p-2">
+                <div class="col-8 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/logo.svg" alt="avatar" height="60" class="bg-dark rounded-circle p-1">
+                    <h2 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h2>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/icons/avatar.png" alt="avatar" height="50"
+                        class="bg-light rounded-circle">
+                    <h4 class="d-inline fs-5">USUARIO</h4>
+                    <a href="../auth/logout.html" class="btn btn-outline-dark btn-sm" title="Cerrar sesión">
+                        <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
         <nav class="navbar navbar-expand-xl navbar-dark bg-green-blue">
@@ -49,16 +50,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link  roboto-font fw-bold" aria-current="page" href="registro_paciente.html">Registro de Pacientes</a>
+                            <a class="nav-link  roboto-font fw-bold" aria-current="page"
+                                href="registro_paciente.html">Registro de Pacientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link roboto-font" href="entradas_salidas.html">Registro de Entradas y Salidas</a>
+                            <a class="nav-link roboto-font" href="entradas_salidas.html">Registro de Entradas y
+                                Salidas</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link roboto-font" href="facturacion.html">Gestión Cobros y Facturación</a>
                         </li>
-						<li class="nav-item">
-                            <a class="nav-link active roboto-font" href="unidad_funcional.html">Asignacion de Unidades Funcional</a>
+                        <li class="nav-item">
+                            <a class="nav-link active roboto-font" href="unidad_funcional.html">Asignacion de Unidades
+                                Funcional</a>
                         </li>
                     </ul>
                 </div>
@@ -67,18 +71,20 @@
     </header>
 
     <main class="container-fluid mt-4">
-        
+
         <div class="row">
-            
+
             <div class="col-lg-5">
                 <div class="p-4 border rounded shadow-sm bg-white">
                     <form>
                         <div class="mb-3">
                             <label for="idIngreso" class="form-label roboto-font mb-0">ID de ingreso:</label>
-                            <input type="text" class="form-control" id="idIngreso" placeholder="Ingrese su ID de ingreso">
+                            <input type="text" class="form-control" id="idIngreso"
+                                placeholder="Ingrese su ID de ingreso">
                         </div>
                         <div class="mb-3">
-                            <label for="unidadFuncional" class="form-label roboto-font mb-0">Unidad Funcional Asignada:</label>
+                            <label for="unidadFuncional" class="form-label roboto-font mb-0">Unidad Funcional
+                                Asignada:</label>
                             <select class="form-select" id="unidadFuncional">
                                 <option selected>Seleccione la Unidad Funcional</option>
                                 <option value="1">Piso 1 - Cirugía</option>
@@ -89,26 +95,29 @@
                         </div>
                         <div class="mb-3">
                             <label for="motivo" class="form-label roboto-font mb-0">Motivo o diagnostico:</label>
-                            <input type="text" class="form-control" id="motivo" placeholder="Ingrese el Motivo de diagnostico">
+                            <input type="text" class="form-control" id="motivo"
+                                placeholder="Ingrese el Motivo de diagnostico">
                         </div>
-                         <div class="mb-3">
+                        <div class="mb-3">
                             <label for="medicoAsigna" class="form-label roboto-font mb-0">Medico que asigna:</label>
-                            <input type="text" class="form-control" id="medicoAsigna" placeholder="Ingrese el nombre del medico">
+                            <input type="text" class="form-control" id="medicoAsigna"
+                                placeholder="Ingrese el nombre del medico">
                         </div>
-                         <div class="mb-3">
+                        <div class="mb-3">
                             <label for="fechaTraslado" class="form-label roboto-font mb-0">Fecha y hora:</label>
                             <input type="date" class="form-control" id="fechaTraslado">
                         </div>
                         <div class="mb-3">
                             <label for="estadoTraslado" class="form-label roboto-font mb-0">Estado de Traslado:</label>
-                            <input type="text" class="form-control" id="estadoTraslado" placeholder="Ingrese el estado de traslado">
+                            <input type="text" class="form-control" id="estadoTraslado"
+                                placeholder="Ingrese el estado de traslado">
                         </div>
                     </form>
                 </div>
             </div>
-            
+
             <div class="col-lg-7">
-                
+
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped">
                         <thead>
@@ -149,38 +158,38 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <div class="row mt-4">
                     <div class="col-4 text-center">
-                         <button type="submit" class="btn btn-success d-flex flex-column align-items-center p-3">
-							<i class="fa-solid fa-file-circle-plus fa-2x mb-1"></i>
-							<span class="roboto-font">Agregar Datos</span>
-						</button>
+                        <button type="submit" class="w-100 btn btn-success d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-circle-plus fa-2x mb-1"></i>
+                            <span class="roboto-font">Agregar Datos</span>
+                        </button>
                     </div>
-                     <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-primary d-flex flex-column align-items-center p-3">
-						<i class="fa-solid fa-file-pen fa-2x mb-1"></i>
-						<span class="roboto-font">Modificar Datos</span>
-					</button>
+                    <div class="col-4 text-center">
+                        <button type="submit" class="w-100 btn btn-primary d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-pen fa-2x mb-1"></i>
+                            <span class="roboto-font">Modificar Datos</span>
+                        </button>
                     </div>
-                     <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-danger d-flex flex-column align-items-center p-3">
-						<i class="fa-solid fa-file-circle-xmark fa-2x mb-1"></i>
-						<span class="roboto-font">Eliminar Datos</span>
-					</button>
+                    <div class="col-4 text-center">
+                        <button type="submit" class="w-100 btn btn-danger d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-circle-xmark fa-2x mb-1"></i>
+                            <span class="roboto-font">Eliminar Datos</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </main>
 
     <footer>
-        
+
     </footer>
 
-    
-<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
