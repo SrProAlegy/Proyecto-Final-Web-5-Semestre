@@ -7,6 +7,7 @@
 	--blue-ncs: #277fb1;
 	--antiflash-white: #f2f5f6;
   --carbon: #414141;
+  --orange: #ce520f;
 }
 
 
@@ -42,6 +43,11 @@
   color: #000 !important;
 }
 
+.bg-orange {
+  background-color: var(--orange) !important;
+  color: #fff !important;
+}
+
 /* 🟢 Texto personalizado */
 
 .text-delft-blue { color: var(--delft-blue) !important; }
@@ -50,6 +56,7 @@
 .text-yinmn-blue { color: var(--yinmn-blue) !important; }
 .text-blue-ncs { color: var(--blue-ncs) !important; }
 .text-antiflash-white { color: var(--antiflash-white) !important; }
+.text-orange { color: var(--orange) !important; }
 
 /* Botones personalizados */
 
@@ -78,4 +85,13 @@
 }
 .btn-dark-cyan:hover {
   background-color: #256f70;
+}
+
+.btn-orange {
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+}
+.btn-orange:hover {
+  background-color: #b94b0f;
 }
