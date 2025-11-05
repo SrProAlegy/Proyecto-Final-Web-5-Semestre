@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
+	<title>Usuarios</title>
 	<!--  icon -->
 	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
 	<!-- Font Awesome -->
@@ -13,9 +13,9 @@
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/colors.css">
+	<link rel="stylesheet" href="../../assets/css/fonts.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 
@@ -24,45 +24,228 @@
 
 	<header>
 		<!-- banner -->
-		<div class="container-fluid">
+		<div class="container-fluid bg-dark text-light">
 			<div class="row p-2">
-				<div class="col-9 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+				<div class="col-8 d-flex align-items-center justify-content-around">
+					<img src="../../assets/img/logo.svg" alt="avatar" height="60" class="bg-light rounded-circle p-1">
+					<h2 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h2>
 				</div>
-				<div class="col-3 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
+				<div class="col-3 d-flex align-items-center justify-content-around">
+					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50"
+						class="bg-light rounded-circle">
+					<h4 class="d-inline fs-5">ADMINISTRADOR</h4>
 					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
-						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
+						<i class="fa-solid fa-right-from-bracket fa-lg"></i>
 					</a>
+				</div>
+				<div class="col-1 d-flex align-items-center justify-content-end">
+					<!-- Botón para abrir sidebar -->
+					<button class="btn btn-outline-light type=" button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="Abrir panel">
+						<i class="fa-solid fa-bars"></i>
+					</button>
 				</div>
 			</div>
 		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 	</header>
 
-	<main>
-		<!-- inicio contenido-->
+	<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
+		aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title text-uppercase fw-bold text-center w-75" id="offcanvasRightLabel">Administración
+			</h5>
+			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"
+				title="Cerrar"></button>
+		</div>
 
-		<!--fin contenido-->
+		<div class="offcanvas-body">
+			<div class="list-group">
+				<a href="dashboard.html" class="list-group-item list-group-item-action d-flex align-items-center gap-2 fs-5 fw-bold">
+					<img src="../../assets/img/logo.svg" alt="Usuarios" height="40">
+					Inicio
+				</a>
+				<a href="users.html"
+					class="list-group-item list-group-item-action d-flex align-items-center gap-2 fs-5 fw-bold">
+					<img src="../../assets/img/icons/avatar.png" alt="Usuarios" height="40">
+					Administración de Usuarios
+				</a>
+				<a href="informe.html"
+					class="list-group-item list-group-item-action d-flex align-items-center gap-2 fs-5 fw-bold">
+					<img src="../../assets/img/icons/reportes.png" alt="Informes" height="40">
+					Informes Financieros
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<div class="container-fluid">
+			<h4 class="my-3 mb-3 text-center">Administración de Usuarios</h4>
+
+			<!-- tabla general -->
+			<div class="table-responsive shadow p-4 rounded border border-3" id="general">
+				<table class="table table-striped table-hover align-middle">
+					<thead class="table-dark">
+						<tr>
+							<th scope="col">Usuario</th>
+							<th scope="col">Contraseña</th>
+							<th scope="col">Rol</th>
+							<th scope="col">Estado</th>
+							<th scope="col">Nombre</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>admin01</td>
+							<td>contra01</td>
+							<td>Administrador</td>
+							<td><span class="badge bg-success">Activo</span></td>
+							<td>Juan Pérez</td>
+						</tr>
+						<tr>
+							<td>medico02</td>
+							<td>contra02</td>
+							<td>Médico</td>
+							<td><span class="badge bg-success">Activo</span></td>
+							<td>Laura Gómez</td>
+						</tr>
+						<tr>
+							<td>enfermeria03</td>
+							<td>contra03</td>
+							<td>Enfermería</td>
+							<td><span class="badge bg-danger">Inactivo</span></td>
+							<td>Carlos Ramírez</td>
+						</tr>
+						<tr>
+							<td>farmacia04</td>
+							<td>contra04</td>
+							<td>Farmacia</td>
+							<td><span class="badge bg-danger">Inactivo</span></td>
+							<td>Ana Torres</td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-outline-dark">
+					<i class="fa-solid fa-rotate-left me-1"></i> Recargar
+				</button>
+			</div>
+
+			<!-- agregar usuario -->
+			<div class="container-fluid my-3 shadow p-4 rounded border border-3" id="agregar">
+				<h5 class="text-center">Agregar Usuario</h5>
+				<!-- Formulario -->
+				<form class="row g-3 align-items-end">
+					<div class="col-md-3">
+						<label for="usuario" class="form-label">Usuario</label>
+						<input type="text" class="form-control" id="usuario" placeholder="Usuario">
+					</div>
+					<div class="col-md-2">
+						<label for="rol" class="form-label">Rol</label>
+						<select id="rol" class="form-select">
+							<option selected>Seleccionar...</option>
+							<option>Admin</option>
+							<option>Admisión</option>
+							<option>Farmacia</option>
+							<option>Cocina</option>
+							<option>Enfermería</option>
+							<option>Médico</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="password" class="form-label">Contraseña</label>
+						<input type="password" class="form-control" id="password" placeholder="Contraseña">
+					</div>
+
+					<div class="col-md-3">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+
+					<div class="col-12 d-flex justify-content-evenly gap-2">
+						<button type="submit" class="btn btn-success">
+							<i class="fa-solid fa-user-plus me-1"></i> Agregar
+						</button>
+						<button type="reset" class="btn btn-outline-dark">
+							<i class="fa-solid fa-rotate-left me-1"></i> Limpiar
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- modificar usuario -->
+			<div class="container-fluid my-5 shadow p-4 rounded border border-3" id="modificar">
+				<h5 class="text-center">Modificar Usuario</h5>
+				<!-- Formulario -->
+				<form class="row g-3 align-items-end">
+					<div class="col-md-1">
+						<label for="id" class="form-label">ID</label>
+						<input type="text" class="form-control" id="id" placeholder="ID">
+					</div>
+					<div class="col-md-3">
+						<label for="usuario" class="form-label">Usuario</label>
+						<input type="text" class="form-control" id="usuario" placeholder="Usuario">
+					</div>
+					<div class="col-md-2">
+						<label for="rol" class="form-label">Rol</label>
+						<select id="rol" class="form-select">
+							<option selected>Seleccionar...</option>
+							<option>Admin</option>
+							<option>Admisión</option>
+							<option>Farmacia</option>
+							<option>Cocina</option>
+							<option>Enfermería</option>
+							<option>Médico</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="password" class="form-label">Contraseña</label>
+						<input type="password" class="form-control" id="password" placeholder="Contraseña">
+					</div>
+					<div class="col-md-2">
+						<label for="estado" class="form-label">Estado</label>
+						<select id="estado" class="form-select">
+							<option selected>Seleccionar...</option>
+							<option>Activo</option>
+							<option>Inactivo</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<label for="nombre" class="form-label">Nombre</label>
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre">
+					</div>
+
+					<div class="col-9 d-flex justify-content-evenly gap-2">
+						<button type="submit" class="btn btn-warning text-white">
+							<i class="fa-solid fa-pen-to-square me-1"></i> Modificar
+						</button>
+						<button type="reset" class="btn btn-outline-dark">
+							<i class="fa-solid fa-rotate-left me-1"></i> Limpiar
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- eliminar usuario -->
+			<div class="container-fluid my-3 shadow p-4 rounded border border-3" id="agregar">
+				<h5 class="text-center">Eliminar Usuario</h5>
+				<!-- Formulario -->
+				<form class="row g-3 align-items-end">
+					<div class="col-md-3">
+						<label for="id" class="form-label">ID</label>
+						<input type="text" class="form-control" id="id" placeholder="ID">
+					</div>
+					
+					<div class="col-9 d-flex justify-content-evenly gap-2">
+						<button type="submit" class="btn btn-danger">
+							<i class="fa-solid fa-user-minus me-1"></i> Eliminar
+						</button>
+						<button type="reset" class="btn btn-outline-dark">
+							<i class="fa-solid fa-rotate-left me-1"></i> Limpiar
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
 	</main>
 
 	<footer>
