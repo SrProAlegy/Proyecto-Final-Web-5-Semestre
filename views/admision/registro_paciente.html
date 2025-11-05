@@ -2,75 +2,333 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
-	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admisión - Registro de Pacientes</title>
+
+    <link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../assets/css/colors.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
-
 
 <body>
 
-	<header>
-		<!-- banner -->
-		<div class="container-fluid">
-			<div class="row p-2">
-				<div class="col-9 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
-					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
-						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
-					</a>
-				</div>
-			</div>
-		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+    <header>
 
-	<main>
-		<!-- inicio contenido-->
+        <div class="container-fluid">
+            <div class="row p-2">
+                <div class="col-9 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/logo.svg" alt="avatar" height="60">
+                    <h1 class="d-inline nexa-font">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-evenly">
+                    <img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
+                    <h4 class="d-inline roboto-font">USUARIO</h4>
+                    <a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
+                        <img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-		<!--fin contenido-->
-	</main>
 
-	<footer>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-green-blue">
+            <div class="container">
+                <h5>Modulo de Admisión</h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active roboto-font fw-bold" aria-current="page"
+                                href="registro_paciente.html">Registro de Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link roboto-font" href="entradas_salidas.html">Registro de Entradas y
+                                Salidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link roboto-font" href="facturacion.html">Gestión Cobros y Facturación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link roboto-font" href="unidad_funcional.html">Asignacion de Unidades
+                                Funcional</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	</footer>
+    <main class="container-fluid mt-4">
 
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                    <h5 class="nexa-font">Información Personal:</h5>
+                    <form>
+                        <div class="mb-2">
+                            <label for="nombre" class="form-label roboto-font mb-0">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+                        </div>
+                        <div class="mb-2">
+                            <label for="apPaterno" class="form-label roboto-font mb-0">Apellido Paterno:</label>
+                            <input type="text" class="form-control" id="apPaterno"
+                                placeholder="Ingrese su apellido Paterno">
+                        </div>
+                        <div class="mb-2">
+                            <label for="apMaterno" class="form-label roboto-font mb-0">Apellido Materno:</label>
+                            <input type="text" class="form-control" id="apMaterno"
+                                placeholder="Ingrese su apellido Materno">
+                        </div>
+                        <div class="mb-2">
+                            <label for="fechaNac" class="form-label roboto-font mb-0">Fecha de Nacimiento:</label>
+                            <input type="date" class="form-control" id="fecNac">
+
+                            </select>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label roboto-font mb-0">Sexo:</label>
+                            <div class="pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="sexoH" value="Hombre"
+                                        checked>
+                                    <label class="form-check-label roboto-font" for="sexoH">Hombre</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Mujer">
+                                    <label class="form-check-label roboto-font" for="sexoM">Mujer</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="curp" class="form-label roboto-font mb-0">CURP:</label>
+                            <input type="text" class="form-control" id="curp" placeholder="Ingrese su CURP">
+                        </div>
+                        <div class="mb-2">
+                            <label for="tipoSangre" class="form-label roboto-font mb-0">Tipo de Sangre:</label>
+                            <select class="form-select" id="tipoSangre">
+                                <option selected>Seleccione su Tipo De Sangre</option>
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                    <h5 class="nexa-font">Información de Contacto:</h5>
+                    <form>
+                        <div class="mb-2">
+                            <label for="calle" class="form-label roboto-font mb-0">Calle:</label>
+                            <input type="text" class="form-control" id="calle" placeholder="Ingrese su Calle">
+                        </div>
+                        <div class="mb-2">
+                            <label for="numExtInt" class="form-label roboto-font mb-0">Número Interior y
+                                Exterior:</label>
+                            <input type="text" class="form-control" id="numExtInt"
+                                placeholder="Ingrese su Numero Int. y Ext.">
+                        </div>
+                        <div class="mb-2">
+                            <label for="colonia" class="form-label roboto-font mb-0">Colonia:</label>
+                            <input type="text" class="form-control" id="colonia" placeholder="Ingrese su Colonia">
+                        </div>
+                        <div class="mb-2">
+                            <label for="cp" class="form-label roboto-font mb-0">Código Postal:</label>
+                            <input type="text" class="form-control" id="cp" placeholder="Ingrese su Codigo Postal">
+                        </div>
+                        <div class="mb-2">
+                            <label for="ciudad" class="form-label roboto-font mb-0">Ciudad:</label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su Ciudad">
+                        </div>
+                        <div class="mb-2">
+                            <label for="estado" class="form-label roboto-font mb-0">Estado:</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Ingrese su Estado">
+                        </div>
+                        <div class="mb-2">
+                            <label for="tel1" class="form-label roboto-font mb-0">Número de Teléfono Principal:</label>
+                            <input type="text" class="form-control" id="tel1" placeholder="Ingrese su Numero Principal">
+                        </div>
+                        <div class="mb-2">
+                            <label for="tel2" class="form-label roboto-font mb-0">Número de Teléfono Secundario:</label>
+                            <input type="text" class="form-control" id="tel2"
+                                placeholder="Ingrese su Numero Secundario">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label roboto-font mb-0">Correo Electronico:</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="Ingrese su Correo Electronico">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="row mb-3">
+                    <div class="col-4 text-center">
+                        <button type="submit" class="btn btn-success d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-circle-plus fa-2x mb-1"></i>
+                            <span class="roboto-font">Agregar Datos</span>
+                        </button>
+                    </div>
+                    <div class="col-4 text-center">
+                        <button type="submit" class="btn btn-primary d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-pen fa-2x mb-1"></i>
+                            <span class="roboto-font">Modificar Datos</span>
+                        </button>
+                    </div>
+                    <div class="col-4 text-center">
+                        <button type="submit" class="btn btn-danger d-flex flex-column align-items-center p-3">
+                            <i class="fa-solid fa-file-circle-xmark fa-2x mb-1"></i>
+                            <span class="roboto-font">Eliminar Datos</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <div class="col-12 table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="roboto-font bg-green-blue">Nombre
+                                    </th>
+                                    <th class="roboto-font bg-green-blue">Apellido
+                                        Paterno</th>
+                                    <th class="roboto-font bg-green-blue">Fecha de
+                                        Nacimiento</th>
+                                    <th class="roboto-font bg-green-blue">Sexo</th>
+                                    <th class="roboto-font bg-green-blue">CURP</th>
+                                    <th class="roboto-font bg-green-blue">Tipo de
+                                        Sangre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Juan</td>
+                                    <td>Pérez</td>
+                                    <td>1985-04-12</td>
+                                    <td>Hombre</td>
+                                    <td>PERJ850412HDF...</td>
+                                    <td>O+</td>
+                                </tr>
+                                <tr>
+                                    <td>Maria</td>
+                                    <td>González</td>
+                                    <td>1992-11-30</td>
+                                    <td>Mujer</td>
+                                    <td>GOMM921130MDF...</td>
+                                    <td>A-</td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos</td>
+                                    <td>Sánchez</td>
+                                    <td>2001-07-21</td>
+                                    <td>Hombre</td>
+                                    <td>SACC010721HDF...</td>
+                                    <td>B+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="roboto-font bg-green-blue">Calle
+                                    </th>
+                                    <th class="roboto-font bg-green-blue">Numero
+                                        Int. y Ext.</th>
+                                    <th class="roboto-font bg-green-blue">Colonia
+                                    </th>
+                                    <th class="roboto-font bg-green-blue">Codigo
+                                        Postal</th>
+                                    <th class="roboto-font bg-green-blue">Ciudad
+                                    </th>
+                                    <th class="roboto-font bg-green-blue">Estado
+                                    </th>
+                                    <th class="roboto-font bg-green-blue">Telefono
+                                        Principal</th>
+                                    <th class="roboto-font bg-green-blue">Telefono
+                                        Secundario</th>
+                                    <th class="roboto-font bg-green-blue">Correo
+                                        Electronico</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Av. Siempre Viva</td>
+                                    <td>742</td>
+                                    <td>Centro</td>
+                                    <td>06000</td>
+                                    <td>Ciudad de México</td>
+                                    <td>CDMX</td>
+                                    <td>5512345678</td>
+                                    <td>N/A</td>
+                                    <td>juan.perez@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Calle Falsa</td>
+                                    <td>123</td>
+                                    <td>Reforma</td>
+                                    <td>06500</td>
+                                    <td>Ciudad de México</td>
+                                    <td>CDMX</td>
+                                    <td>5587654321</td>
+                                    <td>5598765432</td>
+                                    <td>maria.g@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Insurgentes Sur</td>
+                                    <td>1000, Int 5</td>
+                                    <td>Del Valle</td>
+                                    <td>03100</td>
+                                    <td>Ciudad de México</td>
+                                    <td>CDMX</td>
+                                    <td>5511223344</td>
+                                    <td>N/A</td>
+                                    <td>c.sanchez@email.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

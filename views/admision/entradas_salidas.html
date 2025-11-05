@@ -2,75 +2,259 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
-	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admisión - Entradas y Salidas</title>
+    
+    <link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../../assets/css/colors.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
-
 
 <body>
 
-	<header>
-		<!-- banner -->
-		<div class="container-fluid">
-			<div class="row p-2">
-				<div class="col-9 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
-					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
-						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
-					</a>
-				</div>
-			</div>
-		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+ <header>
 
-	<main>
-		<!-- inicio contenido-->
+        <div class="container-fluid">
+            <div class="row p-2">
+                <div class="col-9 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/logo.svg" alt="avatar" height="60">
+                    <h1 class="d-inline nexa-font">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-evenly">
+                    <img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
+                    <h4 class="d-inline roboto-font">USUARIO</h4>
+                    <a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
+                        <img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-		<!--fin contenido-->
-	</main>
 
-	<footer>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-green-blue">
+            <div class="container">
+                <h5>Modulo de Admisión</h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link roboto-font fw-bold" aria-current="page" href="registro_paciente.html">Registro de Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active roboto-font" href="entradas_salidas.html">Registro de Entradas y Salidas</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link roboto-font" href="facturacion.html">Gestión Cobros y Facturación</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link roboto-font" href="unidad_funcional.html">Asignacion de Unidades Funcional</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	</footer>
+    <main class="container-fluid mt-4">
+        
+        <div class="row">
+            
+            <div class="col-lg-2">
+                <div class="d-grid gap-3">
+                    <button class="btn btn-success btn-lg roboto-font">
+                        <i class="fa-solid fa-file-circle-plus me-2"></i>Agregar Entrada
+                    </button>
+                    <button class="btn btn-danger btn-lg roboto-font">
+                        <i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar Entrada
+                    </button>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="p-3 border rounded shadow-sm bg-white">
+                    <h5 class="nexa-font">Entradas:</h5>
+                    <form>
+                        <div class="mb-2">
+                            <label for="idIngresoE" class="form-label roboto-font mb-0">ID de ingreso:</label>
+                            <input type="text" class="form-control" id="idIngresoE" placeholder="Ingrese su ID de ingreso">
+                        </div>
+                        <div class="mb-2">
+                            <label for="idPacienteE" class="form-label roboto-font mb-0">ID del paciente:</label>
+                            <input type="text" class="form-control" id="idPacienteE" placeholder="Ingrese su ID del paciente">
+                        </div>
+                        <div class="mb-2">
+                            <label for="fechaHoraE" class="form-label roboto-font mb-0">Fecha y hora:</label>
+                            <input type="date" class="form-control" id="fechaHoraE" >
+                        </div>
+                        <div class="mb-2">
+                            <label for="tipoAdmision" class="form-label roboto-font mb-0">Tipo de Admisión:</label>
+                            <input type="text" class="form-control" id="tipoAdmision" placeholder="Ingrese el tipo de Admisión">
+                        </div>
+                         <div class="mb-2">
+                            <label for="medicoAdmite" class="form-label roboto-font mb-0">Medico que admite:</label>
+                            <input type="text" class="form-control" id="medicoAdmite" placeholder="Ingrese el nombre del medico">
+                        </div>
+                        <div class="mb-2">
+                            <label for="diagInicial" class="form-label roboto-font mb-0">Diagnostico Inicial:</label>
+                            <textarea class="form-control" id="diagInicial" rows="2" placeholder="Ingrese el Diagnostico Inicial"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                 <div class="p-3 border rounded shadow-sm bg-white">
+                    <h5 class="nexa-font">Salidas:</h5>
+                    <form>
+                        <div class="mb-2">
+                            <label for="idIngresoS" class="form-label roboto-font mb-0">ID de ingreso:</label>
+                            <input type="text" class="form-control" id="idIngresoS" placeholder="Ingrese su ID de ingreso">
+                        </div>
+                        <div class="mb-2">
+                            <label for="idPacienteS" class="form-label roboto-font mb-0">ID del paciente:</label>
+                            <input type="text" class="form-control" id="idPacienteS" placeholder="Ingrese su ID del paciente">
+                        </div>
+                        <div class="mb-2">
+                            <label for="fechaHoraS" class="form-label roboto-font mb-0">Fecha y hora:</label>
+                            <input type="date" class="form-control" id="fechaHoraS" >
+                        </div>
+                        <div class="mb-2">
+                            <label for="tipoSalida" class="form-label roboto-font mb-0">Tipo de Salida:</label>
+                            <input type="text" class="form-control" id="tipoSalida" placeholder="Ingrese el tipo de Salida">
+                        </div>
+                         <div class="mb-2">
+                            <label for="diagEgreso" class="form-label roboto-font mb-0">Diagnostico de Egreso:</label>
+                             <textarea class="form-control" id="diagEgreso" rows="2" placeholder="Ingrese el diagnostico de egreso"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label for="medicoAlta" class="form-label roboto-font mb-0">Medico que da el alta:</label>
+                            <input type="text" class="form-control" id="medicoAlta" placeholder="Ingrese el medico que da el alta">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-lg-2">
+                 <div class="d-grid gap-3">
+                    <button class="btn btn-success btn-lg roboto-font">
+                        <i class="fa-solid fa-file-circle-plus me-2"></i>Agregar Salida
+                    </button>
+                    <button class="btn btn-danger btn-lg roboto-font">
+                        <i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar Salida
+                    </button>
+                </div>
+            </div>
+        </div>
 
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+        <div class="row mt-4">
+            
+            <div class="col-lg-6">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="roboto-font bg-green-blue">ID de Ingreso</th>
+                                <th class="roboto-font bg-green-blue">ID del paciente</th>
+                                <th class="roboto-font bg-green-blue">Fecha y Hora</th>
+                                <th class="roboto-font bg-green-blue">Tipo de Admisión</th>
+                                <th class="roboto-font bg-green-blue">Medico que admite</th>
+                                <th class="roboto-font bg-green-blue">Diagnostico Inicial</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>I0123</td>
+                                <td>P001</td>
+                                <td>2025-11-03 10:30</td>
+                                <td>Urgencias</td>
+                                <td>Dr. Armando Ruiz</td>
+                                <td>Apendicitis aguda</td>
+                            </tr>
+                            <tr>
+                                <td>I0124</td>
+                                <td>P002</td>
+                                <td>2025-11-03 11:15</td>
+                                <td>Programada</td>
+                                <td>Dra. Sofia Chen</td>
+                                <td>Colecistitis</td>
+                            </tr>
+                             <tr>
+                                <td>I0125</td>
+                                <td>P003</td>
+                                <td>2025-11-03 12:00</td>
+                                <td>Urgencias</td>
+                                <td>Dr. Carlos Lara</td>
+                                <td>Trauma craneoencefálico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                 <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="roboto-font bg-green-blue">ID de Ingreso</th>
+                                <th class="roboto-font bg-green-blue">ID del paciente</th>
+                                <th class="roboto-font bg-green-blue">Fecha y Hora</th>
+                                <th class="roboto-font bg-green-blue">Tipo de Salida</th>
+                                <th class="roboto-font bg-green-blue">Diagnostico de Egreso</th>
+                                <th class="roboto-font bg-green-blue">Medico que da el alta</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr>
+                                <td>I0120</td>
+                                <td>P004</td>
+                                <td>2025-11-03 09:00</td>
+                                <td>Alta Voluntaria</td>
+                                <td>Mejoría</td>
+                                <td>Dr. Juan Diaz</td>
+                            </tr>
+                             <tr>
+                                <td>I0121</td>
+                                <td>P005</td>
+                                <td>2025-11-03 09:30</td>
+                                <td>Alta Médica</td>
+                                <td>Paciente estable</td>
+                                <td>Dra. Laura Paez</td>
+                            </tr>
+                             <tr>
+                                <td>I0122</td>
+                                <td>P006</td>
+                                <td>2025-11-03 10:00</td>
+                                <td>Defunción</td>
+                                <td>Falla multiorgánica</td>
+                                <td>Dr. Oscar Nieto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    
+<script typeTYPE="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

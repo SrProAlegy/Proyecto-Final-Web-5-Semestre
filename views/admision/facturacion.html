@@ -2,75 +2,194 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
-	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admisión - Cobros y Facturación</title>
+    
+    <link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="../../assets/css/colors.css">
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
-
 
 <body>
 
-	<header>
-		<!-- banner -->
-		<div class="container-fluid">
-			<div class="row p-2">
-				<div class="col-9 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
-					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
-						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
-					</a>
-				</div>
-			</div>
-		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+  <header>
 
-	<main>
-		<!-- inicio contenido-->
+        <div class="container-fluid">
+            <div class="row p-2">
+                <div class="col-9 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/logo.svg" alt="avatar" height="60">
+                    <h1 class="d-inline nexa-font">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-evenly">
+                    <img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
+                    <h4 class="d-inline roboto-font">USUARIO</h4>
+                    <a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
+                        <img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-		<!--fin contenido-->
-	</main>
 
-	<footer>
+       <nav class="navbar navbar-expand-xl navbar-dark bg-green-blue">
+            <div class="container">
+                <h5>Modulo de Admisión</h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  roboto-font fw-bold" aria-current="page" href="registro_paciente.html">Registro de Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link roboto-font" href="entradas_salidas.html">Registro de Entradas y Salidas</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link active  roboto-font" href="facturacion.html">Gestión Cobros y Facturación</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link roboto-font" href="unidad_funcional.html">Asignacion de Unidades Funcional</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-	</footer>
+    <main class="container-fluid mt-4">
+        
+        <div class="row">
+            
+            <div class="col-lg-7">
+                <div class="p-4 border rounded shadow-sm bg-white">
+                    <div class="row">
+                        
+                        <div class="col-md-7">
+                            <form>
+                                <h5 class="nexa-font">Información de Seguro:</h5>
+                                <div class="mb-2">
+                                    <label for="infoSeguro" class="form-label roboto-font mb-0">Información de seguro:</label>
+                                    <input type="text" class="form-control" id="infoSeguro" placeholder="Ingrese su información de seguro">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="rfc" class="form-label roboto-font mb-0">RFC:</label>
+                                    <input type="text" class="form-control" id="rfc" placeholder="Ingrese su RFC">
+                                </div>
+                                <div class="mb-2">
+                                    <label for="razonSocial" class="form-label roboto-font mb-0">Razón Social:</label>
+                                    <input type="text" class="form-control" id="razonSocial" placeholder="Ingrese la razón social">
+                                </div>
+                                
+                                <hr class="my-3">
+                                <h5 class="nexa-font">Concepto del Servicio/Medicamento:</h5>
+                                 <div class="mb-2">
+                                    <label for="concepto" class="form-label roboto-font mb-0">Concepto:</label>
+                                    <input type="text" class="form-control" id="concepto" placeholder="Ingrese el Concepto">
+                                </div>
+                                 <div class="mb-2">
+                                    <label for="cantidad" class="form-label roboto-font mb-0">Cantidad:</label>
+                                    <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la cantidad">
+                                </div>
+                                 <div class="mb-2">
+                                    <label for="precio" class="form-label roboto-font mb-0">Precio Unitario:</label>
+                                    <input type="number" class="form-control" id="precio" placeholder="Ingrese la cantidad">
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <h6 class="nexa-font">Numero de Factura ##</h6>
+                            <div class="mb-2">
+                                <label for="fechaFactura" class="form-label roboto-font mb-0">Fecha y hora:</label>
+                                <input type="date" class="form-control" id="fechaFactura">
+                            </div>
+                            <div class="mb-2">
+                                <label for="estado" class="form-label roboto-font mb-0">Estado:</label>
+                                <select class="form-select" id="estado">
+                                    <option value="pendiente" selected>Pendiente</option>
+                                    <option value="pagada">Pagada</option>
+                                </select>
+                            </div>
+                            
+                            <div class="d-grid gap-3 mt-5">
+                                <button class="btn btn-success btn-lg roboto-font d-flex align-items-center justify-content-center">
+                                    <span class="flex-grow-1">Agregar Datos</span>
+                                    <i class="fa-solid fa-file-circle-plus fa-lg ms-2"></i>
+                                </button>
+                                <button class="btn btn-primary btn-lg roboto-font d-flex align-items-center justify-content-center">
+                                     <span class="flex-grow-1">Modificar Datos</span>
+                                    <i class="fa-solid fa-file-pen fa-lg ms-2"></i>
+                                </button>
+                                <button class="btn btn-danger btn-lg roboto-font d-flex align-items-center justify-content-center">
+                                     <span class="flex-grow-1">Eliminar Datos</span>
+                                    <i class="fa-solid fa-file-circle-xmark fa-lg ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="roboto-font bg-green-blue">NO.</th>
+                                <th class="roboto-font bg-green-blue">Nombre</th>
+                                <th class="roboto-font bg-green-blue">Cantidad</th>
+                                <th class="roboto-font bg-green-blue">Precio Unitario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Consulta General Urgencias</td>
+                                <td>1</td>
+                                <td>$800.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Paracetamol 500mg</td>
+                                <td>2</td>
+                                <td>$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Venda de Yeso</td>
+                                <td>1</td>
+                                <td>$250.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="text-end p-3 mt-3">
+                    <h4 class="roboto-font">Subtotal: $1,350.00</h4>
+                    <h4 class="roboto-font">IVA: $216.00</h4>
+                    <h3 class="roboto-font fw-bold mt-2">Total: $1,566.00</h3>
+                </div>
+            </div>
+        </div>
+        
+    </main>
 
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        
+    </footer>
+
+    
+<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
