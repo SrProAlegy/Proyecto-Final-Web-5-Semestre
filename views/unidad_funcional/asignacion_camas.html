@@ -3,73 +3,265 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width class="bg-dark-cyan"=device-width class="bg-dark-cyan", initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
+	<title>Asignación de Camas</title>
 	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/colors.css">
+	<link rel="stylesheet" href="../../assets/css/fonts.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-
-
 <body>
-
 	<header>
-		<!-- banner -->
 		<div class="container-fluid">
-			<div class="row p-2">
-				<div class="col-9 d-flex align-items-center justify-content-around">
-					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
-				</div>
-				<div class="col-3 d-flex align-items-center justify-content-evenly">
-					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
-					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
-						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
-					</a>
-				</div>
-			</div>
-		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="row p-2">
+                <div class="col-9 d-flex align-items-center justify-content-around">
+                    <img src="../../assets/img/logo.svg" alt="avatar" height="60">
+                    <h1 class="d-inline nexa-font">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-evenly">
+                    <img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
+                    <h4 class="d-inline roboto-font">USUARIO</h4>
+                    <a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
+                        <img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+		<nav class="navbar navbar-expand-xl bg-dark-cyan">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
+				<h5>Modulo de Unidades Funcionales</h5>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
+						<li class="nav-item"><a class="nav-link text-light active" aria-current="page"
+								href="asignacion_camas.html">Asignacion de camas</a></li>
+						<li class="nav-item"><a class="nav-link text-light" href="historial_clinico.html">Historial
+								clinico</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<main>
-		<!-- inicio contenido-->
+	<main class="container py-4">
+		<div class="module-container shadow p-4 rounded border border-3">
+			<h2 class="text-center mb-4">Asignación de Camas</h2>
 
-		<!--fin contenido-->
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="section-header">Registro de Camas</div>
+					<form>
+						<div class="mb-3">
+							<label for="idCama" class="form-label">ID de Cama</label>
+							<input type="text" class="form-control" id="idCama" placeholder="Ingrese ID de cama">
+						</div>
+						<div class="mb-3">
+							<label for="tipoCama" class="form-label">Tipo de Cama</label>
+							<select class="form-select" id="tipoCama">
+								<option selected>Seleccione el tipo</option>
+								<option value="1">UCI</option>
+								<option value="2">General</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="numHabitacion" class="form-label">Núm de Habitación</label>
+							<input type="text" class="form-control" id="numHabitacion"
+								placeholder="Ingrese Núm de habitación">
+						</div>
+						<div class="mb-3">
+							<label for="estadoCama" class="form-label">Estado de la Cama</label>
+							<select class="form-select" id="estadoCama">
+								<option selected>Seleccione el estado</option>
+								<option value="1">Disponible</option>
+								<option value="2">Ocupada</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="unidadFuncionalCama" class="form-label">Unidad funcional</label>
+							<input type="text" class="form-control" id="unidadFuncionalCama"
+								placeholder="Ingrese Unidad funcional">
+						</div>
+						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-success me-md-2">
+								<i class="fa-solid fa-file-circle-plus me-2"></i>Agregar
+							</button>
+							<button type="button" class="btn btn-danger">
+								<i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-6 mb-4">
+					<div class="section-header">Registro de Asignación</div>
+					<form>
+						<div class="mb-3">
+							<label for="idAsignacion" class="form-label">ID de Asignación</label>
+							<input type="text" class="form-control" id="idAsignacion"
+								placeholder="Ingrese ID asignación">
+						</div>
+						<div class="mb-3">
+							<label for="idCamaAsignacion" class="form-label">ID de Cama</label>
+							<input type="text" class="form-control" id="idCamaAsignacion"
+								placeholder="Ingrese ID de la cama">
+						</div>
+						<div class="mb-3">
+							<label for="idPaciente" class="form-label">ID de Ingreso del Paciente</label>
+							<input type="text" class="form-control" id="idPaciente" placeholder="Ingrese ID de Ingreso">
+						</div>
+						<div class="mb-3">
+							<label for="fechaHoraAsignacion" class="form-label">Fecha y hora de Asignación</label>
+							<input type="datetime-local" class="form-control" id="fechaHoraAsignacion"
+								value="2025-01-01T00:00">
+						</div>
+						<div class="mb-3">
+							<label for="fechaHoraLiberacion" class="form-label">Fecha y hora de Liberación</label>
+							<input type="datetime-local" class="form-control" id="fechaHoraLiberacion"
+								value="2025-01-01T00:00">
+						</div>
+						<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+							<button type="button" class="btn btn-success me-md-2">
+								<i class="fa-solid fa-file-circle-plus me-2"></i>Agregar
+							</button>
+							<button type="button" class="btn btn-danger">
+								<i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="row">
+				<div class="col-md-6">
+					<h3 class="mt-4 mb-3">Listado de Camas</h3>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th class="bg-dark-cyan" class="bg-dark-cyan">ID de Cama</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Núm de Habitación</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Unidad funcional</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Tipo de Cama</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Estado de la Cama</th class="bg-dark-cyan">
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>C001</td>
+									<td>101</td>
+									<td>Emergencia</td>
+									<td>General</td>
+									<td>Disponible</td>
+								</tr>
+								<tr>
+									<td>C002</td>
+									<td>102</td>
+									<td>Emergencia</td>
+									<td>UCI</td>
+									<td>Ocupada</td>
+								</tr>
+								<tr>
+									<td>C003</td>
+									<td>201</td>
+									<td>Pediatría</td>
+									<td>General</td>
+									<td>Disponible</td>
+								</tr>
+								<tr>
+									<td>C004</td>
+									<td>202</td>
+									<td>Pediatría</td>
+									<td>General</td>
+									<td>Ocupada</td>
+								</tr>
+								<tr>
+									<td>C005</td>
+									<td>301</td>
+									<td>Traumatología</td>
+									<td>UCI</td>
+									<td>Ocupada</td>
+								</tr>
+								<tr>
+									<td>C006</td>
+									<td>302</td>
+									<td>Traumatología</td>
+									<td>General</td>
+									<td>Disponible</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<h3 class="mt-4 mb-3">Historial de Asignaciones</h3>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th class="bg-dark-cyan">ID de Asignación</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">ID de Cama</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">ID de Ingreso del Paciente</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Fecha y hora de Asignación</th class="bg-dark-cyan">
+									<th class="bg-dark-cyan">Fecha y hora de Liberación</th class="bg-dark-cyan">
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>A001</td>
+									<td>C001</td>
+									<td>P1000</td>
+									<td>01/05/2025 10:30</td>
+									<td>--/--/---- --:--</td>
+								</tr>
+								<tr>
+									<td>A002</td>
+									<td>C002</td>
+									<td>P1001</td>
+									<td>01/05/2025 09:00</td>
+									<td>01/06/2025 12:15</td>
+								</tr>
+								<tr>
+									<td>A003</td>
+									<td>C004</td>
+									<td>P1002</td>
+									<td>02/05/2025 08:45</td>
+									<td>--/--/---- --:--</td>
+								</tr>
+								<tr>
+									<td>A004</td>
+									<td>C005</td>
+									<td>P1003</td>
+									<td>03/05/2025 11:20</td>
+									<td>04/05/2025 09:30</td>
+								</tr>
+								<tr>
+									<td>A005</td>
+									<td>C006</td>
+									<td>P1004</td>
+									<td>04/05/2025 14:00</td>
+									<td>--/--/---- --:--</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</main>
 
-	<footer>
+	<footer></footer>
 
-	</footer>
-
-	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

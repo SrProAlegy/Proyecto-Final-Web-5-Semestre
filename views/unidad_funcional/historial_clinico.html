@@ -5,71 +5,253 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
+	<title>Historial Clínico</title>
 	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/colors.css">
+	<link rel="stylesheet" href="../../assets/css/fonts.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
-
 
 <body>
 
 	<header>
-		<!-- banner -->
 		<div class="container-fluid">
 			<div class="row p-2">
 				<div class="col-9 d-flex align-items-center justify-content-around">
 					<img src="../../assets/img/logo.svg" alt="avatar" height="60">
-					<h1 class="d-inline">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
+					<h1 class="d-inline nexa-font">SISTEMA DE GESTIÓN HOSPITALARIO</h1>
 				</div>
 				<div class="col-3 d-flex align-items-center justify-content-evenly">
 					<img src="../../assets/img/icons/avatar.png" alt="avatar" height="50">
-					<h4 class="d-inline">USUARIO</h4>
+					<h4 class="d-inline roboto-font">USUARIO</h4>
 					<a href="../auth/logout.html" class="btn btn-outline-light btn-sm" title="Cerrar sesión">
 						<img src="../../assets/img/icons/salida.png" alt="Cerrar" height="30">
 					</a>
 				</div>
 			</div>
 		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+
+		<nav class="navbar navbar-expand-xl bg-dark-cyan">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
+				<h5>Modulo de Unidades Funcionales</h5>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
+						<li class="nav-item"><a class="nav-link text-light" href="asignacion_camas.html">Asignacion de
+								camas</a></li>
+						<li class="nav-item"><a class="nav-link text-light active" aria-current="page"
+								href="historial_clinico.html">Historial clínico</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<main>
-		<!-- inicio contenido-->
+	<main class="container py-4">
+		<div class="module-container shadow p-4 rounded border border-3">
+			<h2 class="text-center mb-4">Registro de Historial Clínico</h2>
 
-		<!--fin contenido-->
+			<form>
+				<div class="row mb-3 align-items-end ">
+					<div class="col-md-4 d-flex align-items-end ">
+						<div class="flex-grow-1 me-2">
+							<label for="idPaciente" class="form-label">ID Paciente</label>
+							<input type="text" class="form-control" id="idPaciente"
+								placeholder="Ingresar ID del paciente">
+						</div>
+						<button type="button" class="btn btn-warning" style="height: 38px;">
+							<i class="fa-solid fa-magnifying-glass"></i> Buscar
+						</button>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<h5 class="mb-0">Signos vitales</h5>
+					</div>
+					<div class="col-md-4 text-center">
+						<h5 class="mb-0">Indicaciones médicas</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<fieldset class="field-group shadow p-4 rounded border border-3">
+							<h5>Notas de evolución</h5>
+							<div class="mb-3">
+								<label for="fechaHora" class="form-label">Fecha/Hora</label>
+								<input type="datetime-local" class="form-control" id="fechaHora"
+									value="2025-01-01T00:00">
+							</div>
+							<div class="mb-3">
+								<label for="tipoNota" class="form-label">Tipo de nota</label>
+								<input type="text" class="form-control" id="tipoNota"
+									placeholder="Ingrese Tipo de nota">
+							</div>
+							<div class="mb-3">
+								<label for="unidadFuncional" class="form-label">Unidad funcional</label>
+								<input type="text" class="form-control" id="unidadFuncional"
+									placeholder="Ingrese Unidad funcional">
+							</div>
+							<div class="mb-3">
+								<label for="contenido" class="form-label">Contenido</label>
+								<textarea class="form-control" id="contenido" rows="3"
+									placeholder="Ingrese el contenido"></textarea>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-md-4">
+						<fieldset class="field-group shadow p-4 rounded border border-3">
+							<div class="row">
+								<div class="col-6 mb-3">
+									<label for="presionArterial" class="form-label">Presión arterial</label>
+									<input type="text" class="form-control form-control-sm" id="presionArterial"
+										placeholder="Ingresar presión arterial">
+								</div>
+								<div class="col-6 mb-3">
+									<label for="frecuenciaCardiaca" class="form-label">Frecuencia cardíaca</label>
+									<input type="text" class="form-control form-control-sm" id="frecuenciaCardiaca"
+										placeholder="Ingrese frecuencia cardíaca">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 mb-3">
+									<label for="temperatura" class="form-label">Temperatura</label>
+									<input type="text" class="form-control form-control-sm" id="temperatura"
+										placeholder="Ingrese temperatura">
+								</div>
+								<div class="col-6 mb-3">
+									<label for="saturacionOxigeno" class="form-label">Saturación de oxígeno</label>
+									<input type="text" class="form-control form-control-sm" id="saturacionOxigeno"
+										placeholder="Ingrese saturación de oxígeno">
+								</div>
+							</div>
+						</fieldset>
+					</div>
+
+					<div class="col-md-4">
+						<fieldset class="field-group shadow p-4 rounded border border-3">
+							<div class="mb-3">
+								<label for="estadoSalud" class="form-label">Estado de salud</label>
+								<input type="text" class="form-control" id="estadoSalud"
+									placeholder="Ingresar el estado">
+							</div>
+							<div class="mb-3">
+								<label for="descripcionIndicacion" class="form-label">Descripción de indicación</label>
+								<textarea class="form-control" id="descripcionIndicacion" rows="5"
+									placeholder="Ingresar la descripción"></textarea>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+
+				<br>
+
+				<div class="row action-buttons">
+					<div class="col-md-4"></div>
+					<div class="col-md-8 d-grid gap-2 d-md-flex justify-content-md-center">
+						<button type="button" class="btn btn-success me-md-2">
+							<i class="fa-solid fa-file-circle-plus me-2"></i>Agregar
+						</button>
+						<button type="button" class="btn btn-danger">
+							<i class="fa-solid fa-file-circle-xmark me-2"></i>Eliminar
+						</button>
+					</div>
+				</div>
+			</form>
+
+			<hr>
+
+			<h3 class="mt-4 mb-3">Registros del historial médico</h3>
+			<div class="table-responsive">
+				<table class="table table-bordered table-striped table-hover table-sm">
+					<thead>
+						<tr>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Fecha/Hora</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Unidad funcional</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Tipo de nota</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Contenido</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">P. Arterial</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">F. Cardíaca</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Temp.</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Sat. Oxig.</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Estado de salud</th>
+							<th class="bg-dark-cyan" class="bg-dark-cyan">Descripción indicación</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>20/05/2025 10:00</td>
+							<td>UCI</td>
+							<td>Evolución</td>
+							<td>Paciente estable y consciente.</td>
+							<td>120/80</td>
+							<td>75</td>
+							<td>37.0</td>
+							<td>98%</td>
+							<td>Mejorando</td>
+							<td>Continuar con antibióticos.</td>
+						</tr>
+						<tr>
+							<td>21/05/2025 08:45</td>
+							<td>UCI</td>
+							<td>Progreso</td>
+							<td>Paciente responde favorablemente al tratamiento.</td>
+							<td>118/76</td>
+							<td>72</td>
+							<td>36.8</td>
+							<td>97%</td>
+							<td>Estable</td>
+							<td>Reducir analgésicos.</td>
+						</tr>
+						<tr>
+							<td>22/05/2025 09:10</td>
+							<td>Traumatología</td>
+							<td>Control</td>
+							<td>Dolor controlado, movilidad parcial en pierna derecha.</td>
+							<td>119/80</td>
+							<td>70</td>
+							<td>37.2</td>
+							<td>99%</td>
+							<td>Recuperación</td>
+							<td>Iniciar fisioterapia leve.</td>
+						</tr>
+						<tr>
+							<td>23/05/2025 07:30</td>
+							<td>Pediatría</td>
+							<td>Observación</td>
+							<td>Sin fiebre, apetito normal, sueño adecuado.</td>
+							<td>110/70</td>
+							<td>80</td>
+							<td>36.9</td>
+							<td>98%</td>
+							<td>Estable</td>
+							<td>Continuar hidratación oral.</td>
+						</tr>
+						<tr>
+							<td>24/05/2025 11:00</td>
+							<td>Emergencia</td>
+							<td>Alta médica</td>
+							<td>Paciente dado de alta, signos vitales normales.</td>
+							<td>115/75</td>
+							<td>78</td>
+							<td>37.1</td>
+							<td>99%</td>
+							<td>Recuperado</td>
+							<td>Control en una semana.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</main>
 
-	<footer>
+	<footer></footer>
 
-	</footer>
-
-	<!-- Bootstrap core JavaScript -->
 	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
