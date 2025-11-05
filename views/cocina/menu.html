@@ -20,7 +20,7 @@
 
 
 
-<body>
+<body class="d-flex flex-column min-vh-100"></body>
 
 	<header>
 		<!-- banner -->
@@ -40,19 +40,17 @@
 			</div>
 		</div>
 		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-xl navbar-dark bg-delft-blue">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
+				<h5>Dietetica y Cocina</h5>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
+						<li class="nav-item"><a class="nav-link text-light" href="menu.html">Registro de Menus</a></li>
+						<li class="nav-item"><a class="nav-link text-light" href="control_preparacion.html">Control de Preparacion</a></li>
 					</ul>
 				</div>
 			</div>
@@ -61,7 +59,76 @@
 
 	<main>
 		<!-- inicio contenido-->
+<div class="container-fluid p-4">
+        
+        <form>
+            <div class="row mb-3 g-3 align-items-center">
+                
+                <div class="col-md-3">
+                    <label for="pacienteId" class="form-label"><strong>ID Paciente</strong></label>
+                    <input type="text" class="form-control" id="pacienteId" placeholder="ID Paciente">
+                </div>
+                
+                <div class="col-md-3">
+                    <label for="fecha" class="form-label"><strong>Fecha</strong></label>
+                    <input type="date" class="form-control" id="fecha">
+                </div>
+                
+                <div class="col-md-3">
+                    <h5 class="mt-4"><strong>Habitación:</strong> ###</h5>
+                </div>
+            </div>
 
+            <hr class="my-4">
+
+            <div class="row">
+                
+                <div class="col-md-5">
+                    <h4><strong>Alergias</strong></h4>
+                    
+                    <div class="mb-3">
+                        <textarea class="form-control" id="descripcionAlergias" rows="5" placeholder="DESCRIPCIÓN DESDE BD" readonly></textarea>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="tipoComida" class="form-label"><strong>Tipo de comida</strong></label>
+                        <select class="form-select" id="tipoComida">
+                            <option selected>Tipo Comida</option>
+                            <option value="1">Desayuno</option>
+                            <option value="2">Comida</option>
+                            <option value="3">Cena</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="tipoDieta" class="form-label"><strong>Tipo de dieta</strong></label>
+                        <select class="form-select" id="tipoDieta">
+                            <option selected>Tipo Dieta</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Blanda</option>
+                            <option value="3">Líquida</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <h4><strong>Descripción del menú</strong></h4>
+                    
+                    <div class="mb-3">
+                         <textarea class="form-control" id="descripcionMenu" rows="12" placeholder="DESCRIPCIÓN DESDE BD" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger btn-lg me-3">Cancelar</button>
+                    <button type="submit" class="btn btn-success btn-lg">Registrar</button>
+                </div>
+            </div>
+
+        </form>
+        </div>
 		<!--fin contenido-->
 	</main>
 

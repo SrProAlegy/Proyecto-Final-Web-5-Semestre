@@ -40,20 +40,17 @@
 			</div>
 		</div>
 		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-xl navbar-dark bg-delft-blue">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
+				<h5>Dietetica y Cocina</h5>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
-					</ul>
+						<li class="nav-item"><a class="nav-link text-light" href="menu.html">Registro de Menus</a></li>
+						<li class="nav-item"><a class="nav-link text-light" href="control_preparacion.html">Control de Preparacion</a></li>
 				</div>
 			</div>
 		</nav>
@@ -61,7 +58,365 @@
 
 	<main>
 		<!-- inicio contenido-->
+<main class="flex-grow-1 d-flex align-items-center">
+    <div class="container-fluid p-4">
 
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-delft-blue">
+                        <h5 class="mb-0">EN PREPARACIÓN</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido1">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-pigment-green">
+                        <h5 class="mb-0">ENTREGADO</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido2">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-dark-cyan">
+                        <h5 class="mb-0">EN RUTA</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido3">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-delft-blue" >
+                        <h5 class="mb-0">EN PREPARACIÓN</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido4">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-blue-ncs" >
+                        <h5 class="mb-0">LISTO</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido5">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-delft-blue">
+                        <h5 class="mb-0">EN PREPARACIÓN</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido6">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-pigment-green" >
+                        <h5 class="mb-0">ENTREGADO</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido7">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header text-white text-center bg-dark-cyan" >
+                        <h5 class="mb-0">EN RUTA</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Paciente:</h6>
+                        <p class="card-text mb-1"><strong>Habitación:</strong></p>
+                        <p class="card-text"><strong>Dieta:</strong></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido8">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div>
+    <div class="modal fade" id="modalPedido1" tabindex="-1" aria-labelledby="labelModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal1">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-delft-blue" >EN PREPARACIÓN</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p class="text-danger">...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido2" tabindex="-1" aria-labelledby="labelModal2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal2">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-pigment-green" >ENTREGADO</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalPedido3" tabindex="-1" aria-labelledby="labelModal3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal3">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-dark-cyan" >EN RUTA</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p class="text-danger">...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido4" tabindex="-1" aria-labelledby="labelModal4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal4">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-delft-blue">EN PREPARACIÓN</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido5" tabindex="-1" aria-labelledby="labelModal5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal5">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-blue-ncs" >LISTO</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p class="text-danger">...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido6" tabindex="-1" aria-labelledby="labelModal6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal6">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-delft-blue">EN PREPARACIÓN</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido7" tabindex="-1" aria-labelledby="labelModal7" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal7">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-pigment-green" >ENTREGADO</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPedido8" tabindex="-1" aria-labelledby="labelModal8" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="labelModal8">Detalle Pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Estado:</strong> <span class="badge text-white bg-dark-cyans" >EN RUTA</span></p>
+                    <hr>
+                    <h5>Alergias</h5>
+                    <p class="text-danger">...</p>
+                    <hr>
+                    <h5>Tipo de Dieta</h5>
+                    <p>...</p>
+                    <hr>
+                    <h5>Descripción del Menú</h5>
+                    <p>...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
 		<!--fin contenido-->
 	</main>
 
