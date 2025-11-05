@@ -5,25 +5,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Plantilla</title>
-	<!--  icon -->
+	<title>Farmacia - Gestión de Recetas</title>
+
 	<link rel="icon" href="../../assets/public/favicon.png" type="image/x-icon">
-	<!-- Font Awesome -->
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-	<!-- Bootstrap core CSS -->
+
 	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-	<!-- Your custom styles (optional) -->
-	 <link rel="stylesheet" href="../../assets/css/colors.css">
-	 <link rel="stylesheet" href="../../assets/css/fonts.css">
-	 <link rel="stylesheet" href="../../assets/css/style.css">
+
+	<link rel="stylesheet" href="../../assets/css/colors.css">
+	<link rel="stylesheet" href="../../assets/css/fonts.css">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
-
-
 
 <body>
 
 	<header>
-		<!-- banner -->
+
 		<div class="container-fluid">
 			<div class="row p-2">
 				<div class="col-9 d-flex align-items-center justify-content-around">
@@ -39,37 +37,195 @@
 				</div>
 			</div>
 		</div>
-		<!-- barra de navegacion -->
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+
+
+		<nav class="navbar navbar-expand-xl navbar-light bg-dark-cyan">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Nombre Modulo</a>
+				<h5>Modulo de Farmacia</h5>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a class="nav-link text-light" href="#">PRINCIPAL</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 1</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 2</a></li>
-						<li class="nav-item"><a class="nav-link text-light" href="#">OPCION 3</a></li>
+						<li class="nav-item">
+							<a class="nav-link active roboto-font fw-bold" aria-current="page" href="recetas.html"
+								style="color: white;">Gestión de Recetas y Medicación</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link roboto-font" href="almacen.html"
+								style="color: rgb(224, 224, 224);">Almacén de Medicamentos</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<main>
-		<!-- inicio contenido-->
+	<main class="container mt-4">
 
-		<!--fin contenido-->
+		<div class="row">
+
+			<div class="col-md-12 p-3 border rounded shadow-sm">
+				<form>
+					<div class="row">
+						<div class="col-6">
+							<div class="mb-3">
+								<label for="idReceta" class="form-label roboto-font">ID de Receta:</label>
+								<input type="text" class="form-control" id="idReceta"
+									placeholder="Ingrese su ID de receta" required>
+							</div>
+							<div class="mb-3">
+								<label for="idIngreso" class="form-label roboto-font">ID de ingreso:</label>
+								<select class="form-select" id="idIngreso">
+									<option selected>Seleccione el ID de ingreso</option>
+									<option value="1">...</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<label for="medicoPrescribe" class="form-label roboto-font">Medico que
+									prescribe:</label>
+								<input type="text" class="form-control" id="medicoPrescribe"
+									placeholder="Ingrese el nombre del medico." required>
+							</div>
+							<div class="mb-3">
+								<label for="fechaHora" class="form-label roboto-font">Fecha y hora:</label>
+								<input type="date" class="form-control" id="fechaHora" required>
+							</div>
+							<div class="mb-3">
+								<label for="estado" class="form-label roboto-font">Estado:</label>
+								<select class="form-select" id="estado">
+									<option selected>Seleccione el estado</option>
+									<option value="activo">Activo</option>
+									<option value="inactivo">Inactivo</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="mb-3">
+								<label for="nombreMedicamento" class="form-label roboto-font">Nombre del
+									medicamento:</label>
+								<input type="text" class="form-control" id="nombreMedicamento"
+									placeholder="Ingrese el nombre del medicamento." required>
+							</div>
+							<div class="mb-3">
+								<label for="dosis" class="form-label roboto-font">Dosis:</label>
+								<input type="text" class="form-control" id="dosis" placeholder="Ingrese la dosis:"
+									required>
+							</div>
+							<div class="mb-3">
+								<label for="frecuencia" class="form-label roboto-font">Frecuencia:</label>
+								<input type="text" class="form-control" id="frecuencia"
+									placeholder="Ingrese la frecuencia" required>
+							</div>
+							<div class="mb-3">
+								<label for="viaAdministracion" class="form-label roboto-font">Via de
+									administración:</label>
+								<input type="text" class="form-control" id="viaAdministracion"
+									placeholder="Ingrese la via de administración" required>
+							</div>
+							<div class="mb-3">
+								<label for="duracion" class="form-label roboto-font">Duración:</label>
+								<input type="text" class="form-control" id="duracion" placeholder="Ingrese la duración:"
+									required>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<div class="d-flex justify-content-around mb-4">
+					<form>
+						<button type="submit" class="btn btn-success d-flex flex-column align-items-center p-3">
+							<i class="fa-solid fa-file-circle-plus fa-2x mb-1"></i>
+							<span class="roboto-font">Agregar Datos</span>
+						</button>
+					</form>
+					<form>
+						<button type="submit" class="btn btn-primary d-flex flex-column align-items-center p-3">
+							<i class="fa-solid fa-file-pen fa-2x mb-1"></i>
+							<span class="roboto-font">Modificar Datos</span>
+						</button>
+					</form>
+					<form>
+						<button type="submit" class="btn btn-danger d-flex flex-column align-items-center p-3">
+							<i class="fa-solid fa-file-circle-xmark fa-2x mb-1"></i>
+							<span class="roboto-font">Eliminar Datos</span>
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-12 mt-3">
+				<div class="table-responsive">
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr class="">
+								<th class="roboto-font bg-dark-cyan">ID de Receta
+								</th>
+								<th class="roboto-font bg-dark-cyan">ID de Ingreso
+								</th>
+								<th class="roboto-font bg-dark-cyan">Medico que
+									Prescribe</th>
+								<th class="roboto-font bg-dark-cyan">Fecha y Hora
+								</th>
+								<th class="roboto-font bg-dark-cyan">Estado</th>
+								<th class="roboto-font bg-dark-cyan">Nombre del
+									Medicamento</th>
+								<th class="roboto-font bg-dark-cyan">Dosis</th>
+								<th class="roboto-font bg-dark-cyan">Via de Admin.
+								</th>
+								<th class="roboto-font bg-dark-cyan">Duración</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td>R001</td>
+								<td>I0123</td>
+								<td>Dr. Armando Ruiz</td>
+								<td>2025-11-03 10:30</td>
+								<td>Activo</td>
+								<td>Paracetamol</td>
+								<td>500 mg</td>
+								<td>Oral</td>
+								<td>3 días</td>
+							</tr>
+							<tr>
+								<td>R002</td>
+								<td>I0124</td>
+								<td>Dra. Sofia Chen</td>
+								<td>2025-11-03 11:15</td>
+								<td>Activo</td>
+								<td>Amoxicilina</td>
+								<td>250 mg</td>
+								<td>Oral</td>
+								<td>7 días</td>
+							</tr>
+							<tr>
+								<td>R003</td>
+								<td>I0125</td>
+								<td>Dr. Carlos Lara</td>
+								<td>2025-11-03 12:00</td>
+								<td>Completado</td>
+								<td>Insulex</td>
+								<td>10 UI</td>
+								<td>Subcutánea</td>
+								<td>Indefinido</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
 	</main>
 
 	<footer>
 
 	</footer>
 
-	<!-- Bootstrap core JavaScript -->
+
 	<script type="text/javascript" src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
